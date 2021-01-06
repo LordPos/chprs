@@ -10,9 +10,9 @@ I initially set out to make a full quantum simulator in nim before I stumbled up
 
 ### Motivation behind the project
 
-As I mentioned earlier, the C version is not exactly new. The author only had access to 256MB of RAM when it was written [or so the paper said]. Thousands of qubits could be simulated with that. Fast-forward to today where I — a nobody — have 16GB of RAM and 16 threads. Modern multiprocessing capabilities make the entire process so much faster, while the increased memory allows for more qubits. Perhaps we can simulate and measure hundreds of thousands of qubits in lesser time now.	
+As I mentioned earlier, the C version is not exactly new. The author only had access to 256MB of RAM when it was written [or so the paper said]. Thousands of qubits could be simulated with that. Fast-forward to today where I — a nobody — have 16GB of RAM and 16 threads. Modern multiprocessing capabilities make the entire process so much faster, while the increased memory allows for more qubits. Perhaps we can simulate and measure hundreds of thousands of qubits in lesser time now. If that doesn't seem impressive compare that with the ~20 qubits that can be fully simulated on a typical classical machine.
 
-That's the main motivation behind this project: add concurrency support. Rust, as a low-level that emphasizes safety and has amazing support of multithreading was an obvious choice. (also I've been itching to try it out)
+That's the main motivation behind this project: add concurrency support. Rust, as a low-level language that emphasizes safety and has amazing multithreading support was an obvious choice. (also I've been itching to try it out)
 
 ### Usage
 
@@ -25,6 +25,7 @@ replacing filename with the disered file's name. Chprs uses the same .chp file f
 ### Roadmap 
 
 - Track down the last few bugs
-- Make an actual UI. The current one is extremely minimal.
+- Make an actual UI. The current one is extremely minimal
 - Add concurrency support (in my defense, _time_)
+- documentation and perhaps a few more features
 - Benchmark!
