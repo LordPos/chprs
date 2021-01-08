@@ -20,7 +20,7 @@ Very, very beta at the moment. After `git clone`ing `cd`ing into the directory, 
 ```
 cargo run filename.chp
 ```
-replacing filename with the disered file's name. Chprs uses the same .chp file format as [the original](https://www.scottaaronson.com/chp/).
+replacing filename with the disired file's name. Chprs uses the same .chp file format as [the original](https://www.scottaaronson.com/chp/).
 
 ### Roadmap 
 
